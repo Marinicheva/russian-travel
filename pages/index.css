@@ -6,3 +6,9 @@
 @import url(../blocks/langs/langs.css);
 @import url(../blocks/langs/__item/langs__item.css);
 @import url(../blocks/langs/__item/_active/langs__item_active.css);
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__illustration/lead__illustration.css);
+@import url(../blocks/lead/__img/lead__img.css);
+@import url(../blocks/lead/__img-caption/lead__img-caption.css);

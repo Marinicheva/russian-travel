@@ -17,3 +17,6 @@
 @import url(../blocks/intro/__text/intro__text.css);
 @import url(../blocks/travell-facts/travell-facts.css);
 @import url(../blocks/travell-facts/__item/travell-facts__item.css);
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__list/gallery__list.css);
+@import url(../blocks/gallery/__image/gallery__image.css);

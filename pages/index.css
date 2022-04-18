@@ -20,3 +20,12 @@
 @import url(../blocks/gallery/gallery.css);
 @import url(../blocks/gallery/__list/gallery__list.css);
 @import url(../blocks/gallery/__image/gallery__image.css);
+@import url(../blocks/places/places.css);
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__name/place__name.css);
+@import url(../blocks/place/__img/place__img.css);
+@import url(../blocks/place/__link-container/place__link-container.css);
+@import url(../blocks/place/__secondary-text/place__secondary-text.css);
+@import url(../blocks/place/__link/place__link.css);
+@import url(../blocks/place/__text/place__text.css);
+@import url(../blocks/place/__paragraph/place__paragraph.css);

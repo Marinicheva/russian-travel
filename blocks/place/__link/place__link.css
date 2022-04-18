@@ -1,0 +1,8 @@
+.place__link {
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    color: inherit;
+    font-size: 18px;
+    line-height: 1.22;
+    font-weight: 400;
+}

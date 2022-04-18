@@ -6,3 +6,17 @@
     line-height: 1.06;
     font-weight: 900;
 }
+
+@media screen and (max-width: 768px) {
+    .place__name {
+        max-width: 70%;
+        font-size: 42px;
+        line-height: 1.1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .place__name {
+        padding-left: 16px;
+    }  
+}

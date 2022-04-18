@@ -1,7 +1,22 @@
 .place {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: minmax(min-content, 1fr) 1fr;
     grid-template-rows: min-content 1fr;
     column-gap: 40px;
     row-gap: 48px;
+}
+
+@media screen and (max-width: 768px) {
+    .place {
+        grid-template-columns: 49% 1fr;
+        column-gap: 28px
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .place {
+        display: flex;
+        flex-direction: column;
+    }
 }

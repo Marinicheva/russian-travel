@@ -1,0 +1,28 @@
+.cover__overlay {
+    position: absolute;
+    top: 0;
+    left: 48px;
+    min-width: calc(100% - 96px);
+    height: 100%;
+    background: url('../../../images/cover-trains.jpg') no-repeat 0 0;
+    background-size: cover;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.cover__overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(42,44,47,0.3);
+}
+
+@media screen and (max-width: 1024px) {
+    .cover__overlay {
+        min-width: 100%;
+        left: 0;
+    }
+}

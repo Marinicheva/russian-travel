@@ -6,13 +6,13 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
     .cover__subtitle {
         max-width: 35%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 321px) {
     .cover__subtitle {
         max-width: 48%;
     }
@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 320px) {
     .cover__subtitle {
-        max-width: 65%;
+        max-width: 80%;
         font-size: 14px;
         line-height: 1.14;
     }

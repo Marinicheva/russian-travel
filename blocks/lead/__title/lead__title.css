@@ -1,5 +1,5 @@
 .lead__title {
-    margin: 0 auto;
+    margin: 0;
     padding-top: 56px;
     max-width: 720px;
     font-size: 96px;
@@ -8,16 +8,28 @@
     text-align: center;
 }
 
-/*Для более плавного перехода на меньшее разрешение*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .lead__title {
-       font-size: 10vw;
+        padding-top: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+    .lead__title {
+       font-size: 96px;
+       line-height: 1.04;
+    }   
+}
+
+/*Дополнительные стили на случай не стандартных размеров*/
+@media screen and (max-width: 720px) and (min-width: 321px) {
+    .lead__title {
+        font-size: 46px;
     }   
 }
 
 @media screen and (max-width: 320px) {
     .lead__title {
-        padding-top: 48px;
         font-size: 40px;
         line-height: 1.1;
     }

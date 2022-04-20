@@ -3,6 +3,5 @@
    grid-column: 1/2;
    display: block;
    width: 100%;
-   min-width: 320px;
    object-fit: cover;
 }

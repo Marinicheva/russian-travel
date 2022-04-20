@@ -6,24 +6,25 @@
     align-items: center;
     gap: 32px;
     padding: 0 48px;
-    height: 740px;
+    min-height: 740px;
 }
 
 @media screen and (max-width: 1024px) {
     .cover {
         padding: 0;
-        height: 640px;
+        min-height: 640px;
     }  
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 321px) {
     .cover {
-        height: 480px;
+        min-height: 480px;
     }  
 }
 
 @media screen and (max-width: 320px) {
     .cover {
-        height: 200px;
+        gap: 16px;
+        min-height: 200px;
     }  
 }

@@ -4,3 +4,9 @@
     justify-content: end;
     gap: 12px;
 }
+
+@media screen and (max-width: 320px) {
+    .place__link-container {
+        order: -1;
+    }
+}

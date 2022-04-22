@@ -6,9 +6,11 @@
     list-style: none;
 }
 
-@media screen and (max-width: 320px) {
+/*Дополнительные стили на случай не стандартных размеров*/
+@media screen and (max-width: 720px) {
     .menu {
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 32px;
     }
 }

@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-/*Дополнительные стили на случай не стандартных размеров*/
+/*Дополнительные стили для нестандартных дисплеев*/
 @media screen and (max-width: 720px) {
     .menu {
         flex-direction: column;

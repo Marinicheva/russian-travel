@@ -5,15 +5,16 @@
     line-height: 1.06;
     font-weight: 900;
     text-align: center;
+    z-index: 1;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 767px) {
     .cover__title {
         max-width: 55%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 321px) {
     .cover__title {
         max-width: 70%;
     }

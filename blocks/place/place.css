@@ -6,23 +6,29 @@
     row-gap: 46px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 919px) {
     .place {
         grid-template-columns: 440px 1fr;
         column-gap: 32px;
     }
-    
 }
 
-@media screen and (max-width: 768px) and (min-width: 651px) {
+/*Дополнительные стили для нестандартных дисплеев*/
+@media screen and (max-width: 920px) and (min-width: 767px) {
+    .place {
+        grid-template-columns: 360px 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 721px) {
     .place {
         grid-template-columns: 340px 1fr;
         column-gap: 28px;
     }
 }
 
-/*Дополнительные стили для более приятного отображения*/
-@media screen and (max-width: 650px) {
+/*Дополнительные стили для нестандартных дисплеев*/
+@media screen and (max-width: 720px) {
     .place {
         display: flex;
         flex-direction: column;

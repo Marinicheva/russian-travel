@@ -7,14 +7,13 @@
     cursor: pointer;
 }
 
-.langs__item:hover {
+.langs__link:hover {
     opacity: .8;
 }
 
 @media screen and (max-width: 320px) {
-    .langs__item {
+    .langs__link {
         font-size: 18px;
         line-height: 1.11;
-    }
-    
+    }  
 }

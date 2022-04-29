@@ -1,0 +1,13 @@
+.modal-gallery__btn-previous {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    order: -1;
+    cursor: pointer;
+    transition: opacity .6s;
+}
+
+.modal-gallery__btn-previous:hover {
+    opacity: .8;
+}

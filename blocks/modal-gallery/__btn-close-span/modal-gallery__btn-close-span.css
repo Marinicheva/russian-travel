@@ -1,0 +1,10 @@
+.modal-gallery__btn-close-span {
+    min-width: 60px;
+    min-height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg) translate(20px, 20px);
+}
+
+.modal-gallery__btn-close-span:last-child {
+    transform: rotate(135deg) translate(18px, -18px);
+}

@@ -1,0 +1,13 @@
+.modal-gallery__btn-close {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 60px;
+    right: 60px;
+    cursor: pointer;
+    transition: opacity .6s;
+}
+
+.modal-gallery__btn-close:hover {
+    opacity: .8;
+}

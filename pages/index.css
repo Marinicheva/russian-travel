@@ -41,3 +41,11 @@
 @import url(../blocks/menu/menu.css);
 @import url(../blocks/menu/__link/menu__link.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/modal-gallery/modal-gallery.css);
+@import url(../blocks/modal-gallery/_show/modal-gallery_show.css);
+@import url(../blocks/modal-gallery/__img-box/modal-gallery__img-box.css);
+@import url(../blocks/modal-gallery/__img/modal-gallery__img.css);
+@import url(../blocks/modal-gallery/__btn-close/modal-gallery__btn-close.css);
+@import url(../blocks/modal-gallery/__btn-close-span/modal-gallery__btn-close-span.css);
+@import url(../blocks/modal-gallery/__btn-previous/modal-gallery__btn-previous.css);
+@import url(../blocks/modal-gallery/__btn-next/modal-gallery__btn-next.css);

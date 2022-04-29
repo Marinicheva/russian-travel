@@ -1,0 +1,8 @@
+.modal-gallery__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 790px;
+    height: 600px;
+    background-color: #fff;
+}

@@ -2,7 +2,15 @@ import {texts, altImages, sectonsLabels} from './db-translate.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const langs = document.querySelectorAll('.langs__link');
+    const galleryImgs = document.querySelectorAll('.gallery__image');
+    const modalGallery = document.querySelector('.modal-gallery');
+    const modalImg = modalGallery.querySelector('.modal-gallery__img-box');
+    const modalCloseBtn = modalGallery.querySelector('.modal-gallery__btn-close');
+    const modalPrevBtn = modalGallery.querySelector('.modal-gallery__btn-previous');
+    const modalNextBtn = modalGallery.querySelector('.modal-gallery__btn-next');
     let activeLang = 'ru';
+    let src = `./images/photo-gallery-`;
+    let imgNumber;
 
     function translatePage(lang) {
         let textElements = document.querySelectorAll('[data-translate]');
@@ -36,6 +44,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function modalShow() {
+        modalGallery.classList.add('modal-gallery_show');
+    }
+
+    function modalClose() {
+        let openedImg = document.querySelectorAll('.modal-gallery__img');
+
+        if ( openedImg.length > 0 ) {
+            openedImg.forEach(item => {
+                item.remove();
+            });
+        }
+
+        modalGallery.classList.remove('modal-gallery_show');
+    }
+
+    function showBigImg(src) {
+        let bigImg = document.createElement('img');
+        bigImg.classList.add('modal-gallery__img');
+        bigImg.setAttribute('src', src);
+        modalImg.append(bigImg);
+    }
+
     langs.forEach(item => {
         item.addEventListener('click', event => {
             langs.forEach(item => {
@@ -45,5 +76,55 @@ document.addEventListener('DOMContentLoaded', () => {
             translatePage(activeLang);
             });
         });
+    });
+
+    galleryImgs.forEach(item => {
+        item.addEventListener('click', (event) => {
+            imgNumber = event.target.getAttribute('data-img-number');
+            let currentScr = src + `${imgNumber}.jpg`;
+            modalShow();
+            showBigImg(currentScr);
+        });  
+    });
+
+    modalCloseBtn.addEventListener('click', modalClose);
+    
+    modalGallery.addEventListener('click', (event) => {
+        let target = event.target;
+
+        if (target.classList.contains('modal-gallery') ) {
+            modalClose();
+        }
+    });
+
+    modalPrevBtn.addEventListener('click', () => {
+        if ( modalGallery.classList.contains('modal-gallery_show') ) {
+            let img = modalGallery.querySelector('.modal-gallery__img');
+
+            if (imgNumber <= 1) {
+                imgNumber = 12;
+            } else {
+                imgNumber--;
+            }
+            
+            let newSrc = src + `${imgNumber}.jpg`;
+            img.setAttribute('src', newSrc);
+        }
+    });
+
+    modalNextBtn.addEventListener('click', () => {
+        if ( modalGallery.classList.contains('modal-gallery_show') ) {
+            let img = modalGallery.querySelector('.modal-gallery__img');
+
+            if (imgNumber >= 12) {
+                imgNumber = 1;
+            } else {
+                imgNumber++;
+            }
+            
+            let newSrc = src + `${imgNumber}.jpg`;
+            img.setAttribute('src', newSrc);
+        }
+
     });
 });

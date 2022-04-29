@@ -67,6 +67,7 @@ const translateObj = {
         'menu-calendar': 'Calendar',
         'menu-travels': 'Travels',
         'copyright': '&#169; 2022. Marinicheva Ekaterina',
-
     }
 };
+
+export default translateObj;

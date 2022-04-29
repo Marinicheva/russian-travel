@@ -12,7 +12,7 @@
 <body class="page">
   <header class="header">
     <a href="#" class="logo">
-      <img src="./images/header__logo.svg" alt="Изображение России" class="logo__img">
+      <img src="./images/header__logo.svg" alt="Изображение России" class="logo__img" data-src="header-logo-src" data-alt="header-logo-alt" >
     </a>
     <ul class="langs">
       <li class="langs__item"><a href="#" class="langs__link langs__link_active" data-lang="ru">Ru</a></li>
@@ -25,7 +25,7 @@
         <h1 class="lead__title" data-translate="lead-title">Путешествия по России</h1>
         <p class="lead__subtitle" data-translate="lead-subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
         <figure class="lead__illustration">
-          <img src="./images/lead-polka.jpg" alt="Женщина спит в поезде, отвернувшись к стенке" class="lead__img">
+          <img src="./images/lead-polka.jpg" alt="Женщина спит в поезде, отвернувшись к стенке" class="lead__img" data-alt="lead-img">
           <figcaption class="lead__img-caption" data-translate="lead-img-caption">ваша полка — верхняя</figcaption>
         </figure>
       </section>
@@ -53,40 +53,61 @@
         </ul>
       </section>
 
-      <section class="gallery" aria-label="Галерея красивых фотографий">
+      <section class="gallery" aria-label="Галерея красивых фотографий" data-label="gallery">
         <ul class="gallery__list">
-          <li><img src="./images/photo-gallery-train.jpg" alt="Вид из окна движущегося поезда" class="gallery__image">
+          <li>
+            <img src="./images/photo-gallery-train.jpg" alt="Вид из окна движущегося поезда" class="gallery__image" data-alt="gallery-img-1">
           </li>
-          <li><img src="./images/photo-gallery-snow-mountains.jpg" alt="Белоснежные горные вершины с мягкими облаками"
-              class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-field.jpg" alt="Поле со стогами сена в закатной дымке"
-              class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-fog-forest.jpg" alt="Лесные вершины в тумане" class="gallery__image">
+          <li>
+            <img src="./images/photo-gallery-snow-mountains.jpg" alt="Белоснежные горные вершины с мягкими облаками"
+              class="gallery__image" data-alt="gallery-img-2">
+            </li>
+          <li>
+            <img src="./images/photo-gallery-field.jpg" alt="Поле со стогами сена в закатной дымке"
+              class="gallery__image" data-alt="gallery-img-3">
+            </li>
+          <li>
+            <img src="./images/photo-gallery-fog-forest.jpg" alt="Лесные вершины в тумане" class="gallery__image" data-alt="gallery-img-4">
           </li>
-          <li><img src="./images/photo-gallery-car-bailkal.jpg"
-              alt="Колесо автомобиля, стоящего на голубом льду замерзжешего водоема" class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-barguzin-bay.jpg"
-              alt="Пляж в Баргузинском заливе - самом крупном и глубоком заливе Байкала" class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-montains.jpg "
-              alt="Уходящие вверх горы, вершины которых припорошены снегом. " class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-walker.jpg" alt="Знак пешеходного перехода на фоне бетонных конструкций"
-              class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-mutnovsky-volcano.jpg"
+          <li>
+            <img src="./images/photo-gallery-car-bailkal.jpg"
+              alt="Колесо автомобиля, стоящего на голубом льду замерзшего водоема" class="gallery__image" data-alt="gallery-img-5">
+            </li>
+          <li>
+            <img src="./images/photo-gallery-barguzin-bay.jpg"
+              alt="Пляж в Баргузинском заливе - самом крупном и глубоком заливе Байкала" class="gallery__image" data-alt="gallery-img-6">
+            </li>
+          <li>
+            <img src="./images/photo-gallery-montains.jpg "
+              alt="Уходящие вверх горы, вершины которых припорошены снегом" class="gallery__image" data-alt="gallery-img-7">
+            </li>
+          <li>
+            <img src="./images/photo-gallery-walker.jpg" alt="Знак пешеходного перехода на фоне бетонных конструкций"
+              class="gallery__image" data-alt="gallery-img-8">
+            </li>
+          <li>
+            <img src="./images/photo-gallery-mutnovsky-volcano.jpg"
               alt="Скалистая местность, в которой находится действующий вулкан в южной части полуострова Камчатка - Мутновская сопка"
-              class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-Kamchatka.jpg" alt="Камчатская равнина, расстилающаяся перед сопкой"
-              class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-baikal.jpg" alt="Скалистый берег Байкала" class="gallery__image"></li>
-          <li><img src="./images/photo-gallery-hills.jpg" alt="Холмы и скалы в тумане" class="gallery__image">
+              class="gallery__image" data-alt="gallery-img-9">
+            </li>
+          <li>
+            <img src="./images/photo-gallery-Kamchatka.jpg" alt="Камчатская равнина, расстилающаяся перед сопкой"
+              class="gallery__image" data-alt="gallery-img-10">
+            </li>
+          <li>
+            <img src="./images/photo-gallery-baikal.jpg" alt="Скалистый берег Байкала" class="gallery__image" data-alt="gallery-img-11">
+          </li>
+          <li>
+            <img src="./images/photo-gallery-hills.jpg" alt="Холмы и скалы в тумане" class="gallery__image" data-alt="gallery-img-12">
           </li>
         </ul>
       </section>
 
-      <section class="places" aria-label="Места, рекомендуемые к посещению с небольшими описаниями">
+      <section class="places" aria-label="Места, рекомендуемые к посещению с небольшими описаниями" data-label="places">
         <article class="place">
           <h2 class="place__name" data-translate="place-1-name">Куршская коса</h2>
-          <img src="./images/curonian-spit.jpg" alt="Береговая зона Куршской косы, где вода наполнена камнями и пнями"
-            class="place__img">
+          <img src="./images/curonian-spit.jpg" alt="Береговая зона Куршской косы, где вода наполнена камнями и корягами"
+            class="place__img" data-alt="place-1-img">
           <div class="place__link-container">
             <span class="place__secondary-text">URL</span>
             <a href="http://park-kosa.ru" class="place__link" target="blank">park-kosa.ru</a>
@@ -104,7 +125,7 @@
         <article class="place">
           <h2 class="place__name" data-translate="place-2-name">Кольский</h2>
           <img src="./images/kola-peninsula.jpg"
-            alt="Побережье Баренцева моря на Кольском полусотровеЖ сила моря и заснеженные скалы" class="place__img">
+            alt="Побережье Баренцева моря на Кольском полусотрове" class="place__img" data-alt="place-2-img">
           <div class="place__link-container">
             <span class="place__secondary-text">URL</span>
             <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link"
@@ -121,7 +142,7 @@
         </article>
         <article class="place">
           <h2 class="place__name" data-translate="place-3-name">Алтай</h2>
-          <img src="./images/altai.jpg" alt="Ноутбук на фоне умиротворяющего леса Алтая" class="place__img">
+          <img src="./images/altai.jpg" alt="Ноутбук на фоне умиротворяющего леса Алтая" class="place__img" data-alt="place-3-img">
           <div class="place__link-container">
             <span class="place__secondary-text">URL</span>
             <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="place__link">Facebook</a>
@@ -133,7 +154,7 @@
         </article>
         <article class="place">
           <h2 class="place__name" data-translate="place-4-name">Зимний Байкал</h2>
-          <img src="./images/winter-baikal.png" alt="Причудливые узоры на ледяной глади Байкала" class="place__img">
+          <img src="./images/winter-baikal.png" alt="Причудливые узоры на ледяной глади Байкала" class="place__img" data-alt="place-4-img">
           <div class="place__link-container">
             <span class="place__secondary-text">URL</span>
             <a href="https://vk.com/baikalmile" class="place__link" target="blank">https://vk.com/baikalmile</a>
@@ -145,7 +166,7 @@
         </article>
         <article class="place">
           <h2 class="place__name" data-translate="place-5-name">Карелия</h2>
-          <img src="./images/karelia.jpg" alt="Река в окружении лесов Карелии" class="place__img">
+          <img src="./images/karelia.jpg" alt="Река в окружении лесов Карелии" class="place__img" data-alt="place-5-img">
           <div class="place__link-container">
             <span class="place__secondary-text">URL</span>
             <a href="http://vodlozero.ru" class="place__link">http://vodlozero.ru/</a>

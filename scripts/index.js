@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     langs.forEach(item => {
         item.addEventListener('click', event => {
+            event.preventDefault();
             langs.forEach(item => {
                 item.classList.remove('langs__link_active');
                 event.target.classList.add('langs__link_active');
